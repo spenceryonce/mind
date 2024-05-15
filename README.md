@@ -6,7 +6,7 @@ This is a collection of my articles that I've written over the years. Covering a
 A beautiful tools made by jzhao for everyone to turn their brain (Markdown + Obsidian) into websites for free. Check it out below.
 🔗 Quartz v4 Docs: https://quartz.jzhao.xyz/
 
-## Sponsors
+#### Quartz Sponsors
 
 <p align="center">
   <a href="https://github.com/sponsors/jackyzha0">
