@@ -1,10 +1,10 @@
 ---
 title: Google Colab Python Intro
 tags:
-	- google
-	- python
-	- howto
-	- tutorial
+    - google
+    - python
+    - howto
+    - tutorial
 ---
 
 Document started from this [Google Colab Document](https://colab.research.google.com/drive/1VNbZeYdnhNnOy5yJ-NnPYhyFXeAcPZs-?usp=sharing)
