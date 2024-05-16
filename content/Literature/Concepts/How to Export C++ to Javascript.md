@@ -31,7 +31,7 @@ In your main JavaScript code, use the require() function (or a similar mechanism
 
 #### Example:
 Let's illustrate with a simple example of exporting a C++ function named add that adds two numbers:
-```C++
+```c++
 // my_library.h
 #pragma once
 extern "C" {
@@ -39,7 +39,7 @@ extern "C" {
 }
 ```
 
-```C++
+```c++
 // my_library.cpp
 #include "my_library.h"
 int add(int a, int b) {
@@ -47,7 +47,7 @@ int add(int a, int b) {
 }
 ```
 
-```Javascript
+```js
 // my_library.js
 const myLibrary = require('./my_library.dll');
 function add(a, b) {
@@ -56,7 +56,7 @@ function add(a, b) {
 module.exports = { add };
 ```
 
-```Javascript
+```js
 // main.js
 const myLibrary = require('./my_library.js');
 const result = myLibrary.add(1, 2);
