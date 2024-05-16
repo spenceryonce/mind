@@ -1,5 +1,5 @@
 ---
-title: Spencer Yonce' Mind
+title: Spencer Yonce's Mind
 date: 2024-05-15
 ---
 
