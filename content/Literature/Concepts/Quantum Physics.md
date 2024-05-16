@@ -1,3 +1,13 @@
+---
+title: Quantum Physics
+tags: 
+    - quantum
+    - physics
+    - science
+    - math
+    - wave
+date: 2023-06-21
+
 ## Introduction
 Quantum physics, also known as quantum mechanics, is a branch of physics that deals with the behavior and properties of particles at the atomic and subatomic level. It is different from classical physics in that it incorporates the principles of wave-particle duality, superposition, and entanglement, which allow for phenomena not seen in the macroscopic world. 
 

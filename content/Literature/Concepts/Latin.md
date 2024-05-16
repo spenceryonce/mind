@@ -3,6 +3,7 @@ tags:
   - language
   - deadlanguage
   - history
+date: 2024-05-09
 DateCreated: 5/9/2024 10:09am
 ---
 # Latin

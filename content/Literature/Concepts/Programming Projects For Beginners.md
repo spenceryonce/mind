@@ -8,6 +8,7 @@ tags:
   - colortheory
   - code
   - development
+date: 2024-05-04
 DateCreated: 5/4/2024 9:02am
 ---
 ## Project Ideas
