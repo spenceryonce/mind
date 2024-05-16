@@ -1,5 +1,4 @@
 ---
-title: Programming Projects for Beginners
 tags:
   - programming
   - project
@@ -8,8 +7,9 @@ tags:
   - colortheory
   - code
   - development
-date: 2024-05-04
 DateCreated: 5/4/2024 9:02am
+date: 2024-05-04
+title: Programming Projects For Beginners
 ---
 ## Project Ideas
 
@@ -27,6 +27,20 @@ Create a function that can take any string (or char array) as input, and return 
 ###### Text to Hexadecimal
 Create a function that can take any string (or char array) as input, and return that text as its hexadecimal representation.
 
+###### **Prime Number Checker** 
+Write a program that determines if a given number is prime or not.
+
+###### **Factorial Calculator** 
+Calculate the factorial of a given non-negative integer.
+
+###### **Simple Statistics** 
+Calculate the mean, median, and mode of a set of numbers.
+
+###### **Prime Number Checker** 
+Write a program that determines if a given number is prime or not.
+
+
+
 ### B.  Color
 
 ###### RGB to HSL Converter
@@ -37,6 +51,9 @@ Take RGB values input (from 0-255) and convert into hexadecimal representation, 
 
 ### C.  Game
 
+> [!tip]
+> Consider using libraries like `curses` (for terminal control) or `Rich` (for text formatting and styling) to enhance the visual appeal of your console games.
+
 ###### Tetris
 Create a simple game that drops different shapes of blocks from the tops of the screen. The player then has to guide the block left and right to the bottom of the screen. The Tetris block should detect collision between the walls and other Tetris blocks. The player should also be able to hold down button, to make the Tetris block drop faster. If a horizontal row gets fully filled with Tetris blocks, then remove those Tetris block that are apart of the line. If the Tetris blocks go past the top of the screen, game over.
 
@@ -45,6 +62,22 @@ Create a simple interface for playing tic tac toe. 2 player or single player wit
 
 ###### Hangman
 The game should be able to generate a random word for playing hangman. When the user select a letter from the list of available letters, if that letter is in the word, we reveal each letter that matches in the word and proceed to mark out that letter from the available letters. If no match in a word, that letter is marked out from the available letters, and the next stage of hangman is added to the game. (Rope, Head, Body, Left Leg, Right Leg, Left Arm, Right Arm). If the player guesses the word before timer or set amount of turns then the player wins. 
+
+###### **Pong** 
+Recreate the iconic Pong game with two paddles and a bouncing ball.
+
+###### **Breakout** 
+Build a Breakout clone where players use a paddle to bounce a ball and break bricks.
+
+###### **Snake** 
+Implement the classic Snake game where players control a snake that grows longer with each food item consumed.
+
+###### **Mastermind**
+Create a code-breaking game where players try to guess a secret code by making deductions based on feedback.
+
+###### **Quiz Game**
+Create a trivia game with multiple categories and difficulty levels. The user should be able to select a category, and difficultly level, and then answer a series of questions. At the end of the game, the program should give the player a percentage score based on how many they got correct. 
+
 
 ### D.  Physics
 
