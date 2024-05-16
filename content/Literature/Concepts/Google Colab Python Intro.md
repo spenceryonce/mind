@@ -15,71 +15,70 @@ Document started from this [Google Colab Document](https://colab.research.google
 
   The basic data types in python are: (str, int, float, list, tuple, range, set, and bool)
 
-  ```python
+```python
+variable_name = "Data" # this auto infers the type to be string (str)
+variable_int = 34 # infers int
+variable_float = 3.4 # infers float
+variable_list = [1,2,3,4] # infers list
+variable_tuple = (1,2,3) # infers tuple
+variable_range = range(10) # contains the numbers 1-10 & infers range
+variable_set = {1,2,3,4} # infers set
+variable_bool = False # infers bool
+```
 
-  variable_name = "Data" #this auto infers the type to be string (str)
-  variable_int = 34 #infers int
-  variable_float = 3.4 #infers float
-  variable_list = [1,2,3,4] #infers list
-  variable_tuple = (1,2,3) #infers tuple
-  variable_range = range(10) #contains the numbers 1-10 & infers range
-  variable_set = {1,2,3,4} #infers set
-  variable_bool = False #infers bool
-  ```
- 
 ## 2. How to Control When Things Happen
-  
-  - Loops can be used to continuously run a section of code (for, while)
+Loops can be used to continuously run a section of code (for, while)
 
-  ```python
-  fruits = ["apple", "banana", "cherry"]
-  for x in fruits:
-      print(x)
-  ```
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits	
+	print(x)
+```
 
   - Conditional Statements allow you to run sections of code based on a condition (if, elif, else). Think of it like this:
 
-  ```vb
-  If <condition> then
-      do something
-  else
-      do something2
-  ```
+```vb
+If <condition> then
+    do something
+else
+    do something2
+```
 
   In python, we can do conditional statements like this:
 
-  ```python
-  age = 18
-  
-  if num < 18:
-      print("child")
-  elif num > 18 and num < 21:
-      print("child with rent")
-  else:
-      print("adult")
-  ```
+```python
+age = 18
+
+if num < 18:
+    print("child")
+elif num > 18 and num < 21:
+    print("child with rent")
+else:
+    print("adult")
+```
 
 ## 3.  Defining Functions And Then Calling Them
 
 -  A **function** is a block of code which only runs when it is called.
 -   You can pass **data**, known as **parameters**, into a function.
 -   A function can return **data** as a result.
+
 #### Defining Functions
 
 To define a function in python we use the **def** keyword.
 
-  ```python
-  def hello():
-	  print("hello")
-  ```
+```python
+def hello():
+	print("hello")
+```
 
 #### Calling Functions
 
 When we want to run the code inside a function, we can simply write the function's name with () appended to the end like this:
 
-  ```python
-  hello()
-  ```
+```python
+hello()
+```
   
 #### Putting Data into Functions (Arguments)
 
@@ -87,24 +86,23 @@ If we would like to being able to change what happens inside the function from o
 
 Here is a simple example, where we want to print Doctor in front of the names of our physicians on staff.
 
-  ```python
-  def doctor_name(full_name):
-	  print("Doctor" + full_name)
+```python
+def doctor_name(full_name):
+	print("Doctor" + full_name)
 
-  doctor_name("bob rico") #prints to console: Doctor bob rico
-  doctor_name("bobby willis") #prints to console: Doctor bobby willis
-  ```
+doctor_name("bob rico") # prints to console: Doctor bob rico
+doctor_name("bobby willis") # prints to console: Doctor bobby willis
+```
 
-  
+
 What if we wanted to have more than one **argument** in our function? No problem! We can have virtually an unlimited amount of arguments in our functions, but should probably stay under 10 when you are starting out.Just remember to include a comma in between each new argument that you add.
 
 Let's try an example, say we wanted to separate the **full_name** into **first_name** and **last_name**.
 
-  ```python
-  def doctor_name(first_name, last_name):
-	  print("Doctor" + first_name + " " + last_name)
-
-  ```
+```python
+def doctor_name(first_name, last_name):
+	print("Doctor" + first_name + " " + last_name
+```
 
 ## 4. Importing Libraries (Using other peoples code)
 
@@ -112,28 +110,28 @@ To enhance the capabilities of Python, we can import libraries that provide addi
 
 Here's how to import and use the `math` and `datetime` libraries:
 
-  ```python
-  import math
-  import datetime
-  ```
+```python
+import math
+import datetime
+```
 
 #### Using the `math` Library
 
 The `math` library includes a variety of mathematical functions. For example, to calculate the square root of a number, you can use `math.sqrt()`. Here is how to find the square root of 16:
 
-  ```python
-  result = math.sqrt(16)
-  print(result)  # Output: 4.0
-  ```
+```python
+result = math.sqrt(16)
+	print(result)  # Output: 4.0
+```
 
 #### Using the `datetime` Library
 
 The `datetime` library is useful for handling dates and times. For instance, to get the current date and time, you can create a `datetime` object like this:
 
-  ```python
-  now = datetime.datetime.now()
-  print(now)  # Output: Displays the current date and time
-  ```
+```python
+now = datetime.datetime.now()
+	print(now)  # Output: Displays the current date and time
+```
 
 Libraries can significantly extend the functionality of your Python programs, without having to write everything yourself. Thus, enabling you to perform complex operations more easily.
   
@@ -145,44 +143,44 @@ Handling files is a must-know for reading data from external sources and storing
 
 To write text to a file, you use the `open()` function with the mode `'w'` for writing. If the file doesn't exist, Python will create it for you.
 
-  ```python
-  with open('example.txt', 'w') as file:
-      file.write("Hello, world!")
-  ```
+```python
+with open('example.txt', 'w') as file:
+	file.write("Hello, world!")
+```
 
 This code snippet opens a file named `example.txt` and writes "Hello, world!" into it. The `with` statement ensures the file is properly closed after the operations are completed.
+
 #### Reading from a File
 
 Reading from a file is just as straightforward. You use the `open()` function with the mode `'r'` for reading:
 
-  ```python
-  with open('example.txt', 'r') as file:
-      content = file.read()
-      print(content)  # Output: Hello, world!
-  ```
+```python
+with open('example.txt', 'r') as file:
+	content = file.read()
+	print(content)  # Output: Hello, world!
+```
 
 This will open `example.txt` and print its contents to the console. Using `with` ensures the file is closed once it’s no longer needed.
   
 ## 6. Data Visualization with Matplotlib
 
-  Matplotlib is a powerful library for creating a wide range of static, animated, and interactive visualizations in Python. Here’s how to use it for basic plotting tasks:
+Matplotlib is a powerful library for creating a wide range of static, animated, and interactive visualizations in Python. Here’s how to use it for basic plotting tasks:
 #### Basic Line Graph
 
 To create a simple line graph, you first need to import Matplotlib and prepare some data:
  
-  ```python
-  import matplotlib.pyplot as plt
-  
-  # Data for plotting
-  x = [1, 2, 3, 4, 5]
-  y = [2, 3, 5, 7, 11]
+```python
+import matplotlib.pyplot as plt  
+# Data for plotting
+x = [1, 2, 3, 4, 5]
+y = [2, 3, 5, 7, 11]
 
-  plt.plot(x, y)
-  plt.title('Simple Line Graph')
-  plt.xlabel('X Axis Label')
-  plt.ylabel('Y Axis Label')
-  plt.show()
-  ```
+plt.plot(x, y)
+plt.title('Simple Line Graph')
+plt.xlabel('X Axis Label')
+plt.ylabel('Y Axis Label')
+plt.show()
+```
 
 This code will display a line graph illustrating the relationship between `x` and `y`.
 
@@ -190,39 +188,36 @@ This code will display a line graph illustrating the relationship between `x` an
 
 Bar charts are another common visualization type. Here's how to create one:
 
-  ```python
-  import matplotlib.pyplot as plt
+```python
+import matplotlib.pyplot as plt
   
-  # Data for bar chart
-  categories = ['Red', 'Blue', 'Green', 'Yellow', 'Black']
-  values = [10, 15, 7, 5, 9]
+# Data for bar chart
+categories = ['Red', 'Blue', 'Green', 'Yellow', 'Black']
+values = [10, 15, 7, 5, 9
+plt.bar(categories, values)
+plt.title('Simple Bar Chart')
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.show()
+```
 
-  plt.bar(categories, values)
-  plt.title('Simple Bar Chart')
-  plt.xlabel('Categories')
-  plt.ylabel('Values')
-  plt.show()
-  ```
-
-  This plots a basic bar chart with colored categories and their corresponding values.
+This plots a basic bar chart with colored categories and their corresponding values.
 
 #### Generating a Histogram
 
 Histograms are great for showing distributions. Here’s how to plot one:
 
-  ```python
-  import matplotlib.pyplot as plt
-  import numpy as np
-
-  # Generating some data
-  data = np.random.normal(0, 1, 1000)
-
-  plt.hist(data, bins=30)
-  plt.title('Histogram')
-  plt.xlabel('Value')
-  plt.ylabel('Frequency')
-  plt.show()
-  ```
+```python
+import matplotlib.pyplot as plt
+import numpy as n
+# Generating some data
+data = np.random.normal(0, 1, 1000
+plt.hist(data, bins=30)
+plt.title('Histogram')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+plt.show()
+```
 
   This histogram displays the distribution of 1000 random numbers generated with a normal distribution, using 30 bins to group the data.
   
@@ -236,31 +231,29 @@ Pandas is a powerful library for data manipulation and analysis in Python. It pr
 
 First, let's see how to select specific columns and rows from a DataFrame:
 
-  ```python
-  import pandas as pd
-  
-  # Create a sample DataFrame
-  data = {'Name': ['John', 'Anna', 'James', 'Linda'],
-          'Age': [28, 22, 35, 32],
-          'City': ['New York', 'Paris', 'London', 'Berlin']}
-  df = pd.DataFrame(data)
+```python
+import pandas as pd
 
-  # Selecting a column
-  print(df['Name'])
-
-  # Selecting a row
-  print(df.loc[1])
-  ```
+# Create a sample DataFrame
+data = {'Name': ['John', 'Anna', 'James', 'Linda'],
+        'Age': [28, 22, 35, 32],
+        'City': ['New York', 'Paris', 'London', 'Berlin']}
+df = pd.DataFrame(data
+# Selecting a column
+print(df['Name']
+# Selecting a row
+print(df.loc[1])
+```
 
 #### Filtering Data
 
 You can filter rows in a DataFrame based on column values to isolate data that meets certain conditions:
 
-  ```python
-  # Filtering based on a condition
-  young_people = df[df['Age'] < 30]
-  print(young_people)
-  ```
+```python
+# Filtering based on a condition
+young_people = df[df['Age'] < 30]
+print(young_people)
+```
 
 This code will display rows where the 'Age' is less than 30.
 
@@ -268,15 +261,14 @@ This code will display rows where the 'Age' is less than 30.
 
 Pandas makes it simple to perform aggregations like summing or averaging data:
 
-  ```python
-  # Calculate average age
-  average_age = df['Age'].mean()
-  print(f"Average Age: {average_age}")
-
-  # Sum of ages
-  total_age = df['Age'].sum()
-  print(f"Total Age: {total_age}")
-  ```
+```python
+# Calculate average age
+average_age = df['Age'].mean()
+print(f"Average Age: {average_age}"
+# Sum of ages
+total_age = df['Age'].sum()
+print(f"Total Age: {total_age}")
+```
 
 ## 8. Introduction to numpy and Array Operations
 
@@ -286,41 +278,38 @@ Numpy is fundamental for numerical operations in Python. It provides support for
 
 Here's how to create and manipulate numpy arrays:
 
-  ```python
-  import numpy as np
-
-  # Create a numpy array
-  a = np.array([1, 2, 3, 4, 5])
-  print(a)
-
-  # Create a 2D array (matrix)
-  b = np.array([[1, 2], [3, 4]])
-  print(b)
-  ```
+```python
+import numpy as n
+# Create a numpy array
+a = np.array([1, 2, 3, 4, 5])
+print(a
+# Create a 2D array (matrix)
+b = np.array([[1, 2], [3, 4]])
+print(b)
+```
 
 #### Element-wise Operations
 
 Numpy arrays support element-wise operations, which apply a function or operator to each element individually:
 
-  ```python
-  # Element-wise addition
-  c = a + 2
-  print(c)  # Output: [3 4 5 6 7]
-
-  # Element-wise multiplication
-  d = a * 2
-  print(d)  # Output: [2 4 6 8 10]
-  ```
+```python
+# Element-wise addition
+c = a + 2
+print(c)  # Output: [3 4 5 6 7
+# Element-wise multiplication
+d = a * 2
+print(d)  # Output: [2 4 6 8 10]
+```
 
 #### Matrix Multiplication
 
 Matrix operations are straightforward with numpy. Here's how to perform matrix multiplication:
 
-  ```python
-  # Matrix multiplication
-  result = np.dot(b, b)
-  print(result)
-  ```
+```python
+# Matrix multiplication
+result = np.dot(b, b)
+print(result)
+```
 
 This will calculate the dot product of matrix `b` with itself.
 
@@ -333,31 +322,29 @@ Google Colab offers a variety of features that make it a powerful tool for codin
 
 To install Python packages in Google Colab, use the `!pip install` command. For example, to install the latest version of `seaborn` for data visualization, you would run:
 
-  ```python
-  !pip install seaborn
-  ```
+```python
+!pip install seaborn
+```
   
 #### Saving and Loading Files from Google Drive
 
 You can easily link your Google Drive to Colab to access your files:
 
 1. Mount your Google Drive in the notebook:
-    ```python
-    from google.colab import drive
-    drive.mount('/content/drive')
-    ```
-
-    2. You can then read from or write to files in your Drive:
-    ```python
-    with open('/content/drive/My Drive/myfile.txt', 'w') as f:
-        f.write('Hello Google Drive!')
-    ```
-
-    3. To read the same file:
-    ```python
-    with open('/content/drive/My Drive/myfile.txt', 'r') as f:
-        print(f.read())
-    ```
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+2. You can then read from or write to files in your Drive:
+```python
+with open('/content/drive/My Drive/myfile.txt', 'w') as f:
+    f.write('Hello Google Drive!')
+```
+3. To read the same file:
+```python
+with open('/content/drive/My Drive/myfile.txt', 'r') as f:
+    print(f.read())
+```
 
 #### Sharing Colab Notebooks
 
@@ -374,40 +361,38 @@ Interactive widgets in Colab can enhance the interactivity of your notebooks, al
 
 Use `ipywidgets` to create interactive controls. First, install `ipywidgets`:
 
-  ```python
-  !pip install ipywidgets
-  ```
+```python
+!pip install ipywidgets
+```
 
 Then, create a slider that changes the displayed number:
 
-  ```python
-  import ipywidgets as widgets
-  from IPython.display import display
+```python
+import ipywidgets as widgets
+from IPython.display import display
 
-  slider = widgets.IntSlider(value=5, min=0, max=10, step=1, description='Slider:')
-  display(slider)
+slider = widgets.IntSlider(value=5, min=0, max=10, step=1, description='Slider:')
+display(slider)
 
-  def on_value_change(change):
-      print(change['new'])
-
-  slider.observe(on_value_change, names='value')
-  ```
+def on_value_change(change):
+    print(change['new'])
+slider.observe(on_value_change, names='value')
+```
 
 #### Dropdown Menu
 
   Create a dropdown menu that outputs the selection:
 
-  ```python
-  dropdown = widgets.Dropdown(options=['Option 1', 'Option 2', 'Option 3'], description='Choose:')
-  display(dropdown)
+```python
+dropdown = widgets.Dropdown(options=['Option 1', 'Option 2', 'Option 3'], description='Choose:')
+display(dropdown)
+def on_dropdown_change(change):
+    print(f"Selected: {change['new']}")
 
-  def on_dropdown_change(change):
-      print(f"Selected: {change['new']}")
+dropdown.observe(on_dropdown_change, names='value')
+```
 
-  dropdown.observe(on_dropdown_change, names='value')
-  ```
-
-  These interactive elements make Google Colab a more versatile platform for experiments, teaching, or presentations, engaging users directly in the data manipulation process.
+These interactive elements make Google Colab a more versatile platform for experiments, teaching, or presentations, engaging users directly in the data manipulation process.
 
 ## 11. Create Random Numbers And A Chart
 
@@ -440,8 +425,6 @@ For example, let's try to pull data from a [free population api](https://datausa
 	]
 }
 ```
-
-
 We can do this easily by using python's request library, to fetch the data from a URL. Once we have the data, we can make a pandas DataFrame from it. We want to extract only specific years of the data to show in our plot, we can do this by using the `isin()` function to check for specific values in a DataFrame.
 ```python
 import pandas as pd
@@ -523,4 +506,6 @@ interactive_plot = interactive_output(update_graph, {'threshold': threshold_slid
 
 display(interactive_plot)
 ```
+
+And that about wraps it up for now! I hope you enjoyed this little intro to Python with Google Colab and maybe you learned a thing or two along the way.
 

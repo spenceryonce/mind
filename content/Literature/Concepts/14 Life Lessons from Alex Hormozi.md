@@ -7,22 +7,8 @@ tags:
     - quotes
     - tips
 ---
-## Meta Tags
 
-- Personal Growth
-- Business
-- Life Lessons
-- Entrepreneurship
-- Success
-- Failure
-- Learning
-- Humility
-- Respect
-- Goodwill
-- Negotiation
-- Complacency
-
-## Content
+## The Lessons
 
 1. **Assume you're dumber than everyone else**: This mindset encourages humility and active learning. It helps you listen more and talk less, which can lead to better decision-making.
     
@@ -49,3 +35,18 @@ tags:
 12. **The happy man has a thousand wishes, the sad man has one**: This lesson is about the importance of quieting the voices in your head and focusing on doing things that make you happy.
     
 13. **Failure leads to learning, learning leads to success, success leads to complacency, and complacency leads to failure**: This is about the cyclical nature of success and failure in entrepreneurship.
+
+#### Meta Tags
+
+- Personal Growth
+- Business
+- Life Lessons
+- Entrepreneurship
+- Success
+- Failure
+- Learning
+- Humility
+- Respect
+- Goodwill
+- Negotiation
+- Complacency
